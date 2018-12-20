@@ -39,17 +39,4 @@ public class MalgudiConfiguration extends Configuration {
         return defaultName;
     }
 
-//    @NotNull
-//    private DataSourceFactory dataSourceFactory = new DataSourceFactory();
-//
-//    @Valid
-//    @NotNull
-//    @JsonProperty("database")
-//    public DataSourceFactory getDataSourceFactory() {
-//        return dataSourceFactory;
-//    }
-//
-//    public void setDataSourceFactory(DataSourceFactory dataSourceFactory) {
-//        this.dataSourceFactory = dataSourceFactory;
-//    }
 }

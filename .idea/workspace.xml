@@ -63,11 +63,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="CancelledOrderReader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/controller/CancelledOrderReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="685">
-              <caret line="98" column="21" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
+            <state relative-caret-position="316">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1671#1672#0" expanded="true" />
+                <element signature="e#1707#1708#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CancelledOrderInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/CancelledOrderInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SellerInfoReader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/controller/SellerInfoReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1489#1490#0" expanded="true" />
+                <element signature="e#1525#1526#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SellerResource.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/SellerResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seller.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/seller.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="196" selection-start-line="5" selection-start-column="196" selection-end-line="5" selection-end-column="196" />
             </state>
           </provider>
         </entry>
@@ -75,8 +127,20 @@
       <file leaf-file-name="MalgudiService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/service/MalgudiService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="70" column="57" selection-start-line="70" selection-start-column="57" selection-end-line="70" selection-end-column="57" />
+            <state relative-caret-position="46">
+              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SellerRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,58 +151,8 @@
       <file leaf-file-name="AdminResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/AdminResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="14" selection-start-line="14" selection-end-line="15" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SellerResource.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/SellerResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="55" lean-forward="true" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CancelledOrderInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/CancelledOrderInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CancelledOrderReader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/controller/CancelledOrderReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1671#1672#0" expanded="true" />
-                <element signature="e#1707#1708#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SellerInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -146,8 +160,20 @@
       <file leaf-file-name="order.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/order.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="180">
+              <caret line="12" column="187" selection-start-line="12" selection-start-column="187" selection-end-line="12" selection-end-column="187" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SellerInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,7 +195,12 @@
       <find>updateClock</find>
       <find>timeinterval</find>
       <find>ru.vyarus</find>
+      <find>com.malgudi.bot</find>
+      <find>IMG</find>
     </findStrings>
+    <replaceStrings>
+      <replace>https://rukminim1.flixcart.com/image/880/1056/jggv53k0/backpack/m/k/z/amt-fizz-sch-bag-02-black-ff9-0-09-002-backpack-american-original-imaf4ghyfkaucydj.jpeg?q=50</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -186,23 +217,29 @@
         <option value="$PROJECT_DIR$/src/main/resources/assets/scripts/admin.js" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/styles/admin.css" />
         <option value="$PROJECT_DIR$/service.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/service/MalgudiService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/model/CancelledOderInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/model/CancelledOrderInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/order.csv" />
-        <option value="$PROJECT_DIR$/order.csv" />
-        <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/service/MalgudiService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/config/MalgudiConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/model/CancelledOrderInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/controller/CancelledOrderReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/resource/AdminResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/resource/SellerResource.java" />
+        <option value="$PROJECT_DIR$/order.csv" />
+        <option value="$PROJECT_DIR$/seller.csv" />
+        <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/controller/SellerInfoReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerInfo.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="827" />
+    <option name="x" value="20" />
+    <option name="y" value="43" />
+    <option name="width" value="1400" />
+    <option name="height" value="837" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -325,7 +362,9 @@
               <item name="malgudi" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sse" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -359,7 +398,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CancelledOrderReader">
+  <component name="RunManager" selected="Application.MalgudiService">
     <configuration name="CancelledOrderReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="flipkart.sse.controller.CancelledOrderReader" />
       <module name="malgudi" />
@@ -386,15 +425,27 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="SellerInfoReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="flipkart.sse.controller.SellerInfoReader" />
+      <module name="malgudi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="flipkart.sse.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <list>
       <item itemvalue="Application.Malgudi Service" />
       <item itemvalue="Application.MalgudiService" />
       <item itemvalue="Application.CancelledOrderReader" />
+      <item itemvalue="Application.SellerInfoReader" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CancelledOrderReader" />
         <item itemvalue="Application.MalgudiService" />
+        <item itemvalue="Application.SellerInfoReader" />
+        <item itemvalue="Application.CancelledOrderReader" />
       </list>
     </recent_temporary>
   </component>
@@ -412,11 +463,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="20" y="43" width="1400" height="837" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="8" />
       <window_info anchor="bottom" id="DB Execution Console" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.33575758" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Dependency Viewer" order="0" weight="0.32969698" />
       <window_info id="Capture Tool" order="9" />
@@ -425,20 +477,20 @@
       <window_info id="Job Explorer" order="2" />
       <window_info anchor="right" id="Module Dependencies" order="0" weight="0.3297568" />
       <window_info anchor="bottom" id="Console" order="1" />
-      <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
+      <window_info id="Structure" order="4" sideWeight="0.50060606" side_tool="true" weight="0.1795422" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info id="UI Designer" order="7" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
       <window_info id="DB Browser" order="0" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32848486" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32837838" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32969698" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.33575758" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49928468" visible="true" weight="0.37432432" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.53333336" />
-      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.1795422" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49939394" visible="true" weight="0.18483064" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32969698" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
@@ -503,24 +555,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/SellerResource.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-util/9.0.7.v20131107/jetty-util-9.0.7.v20131107.jar!/org/eclipse/jetty/util/component/ContainerLifeCycle.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/service/MalgudiService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -570,16 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/config/MalgudiConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -755,18 +791,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/module/MalgudiModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -778,16 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/service/MalgudiService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="70" column="57" selection-start-line="70" selection-start-column="57" selection-end-line="70" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -812,16 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/CancelledOrderInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/order.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -832,17 +836,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/order.csv">
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/module/MalgudiModule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <caret line="8" column="53" lean-forward="true" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/config/MalgudiConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="390">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/AdminResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="187" selection-start-line="12" selection-start-column="187" selection-end-line="12" selection-end-column="187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/CancelledOrderInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seller.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="196" selection-start-line="5" selection-start-column="196" selection-end-line="5" selection-end-column="196" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/service/MalgudiService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -851,8 +908,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/controller/CancelledOrderReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="316">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1671#1672#0" expanded="true" />
@@ -861,17 +918,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/AdminResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/controller/SellerInfoReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="14" selection-start-line="14" selection-end-line="15" selection-end-column="20" />
+        <state relative-caret-position="330">
+          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1489#1490#0" expanded="true" />
+            <element signature="e#1525#1526#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/SellerResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="55" lean-forward="true" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+        <state relative-caret-position="245">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

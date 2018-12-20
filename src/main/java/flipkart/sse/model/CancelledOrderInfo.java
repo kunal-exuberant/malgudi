@@ -16,16 +16,44 @@ public class CancelledOrderInfo {
 
     String listingId;
 
+    String productId;
+
+    String imgUrl;
+
     String orderPrice;
 
     String sellerId;
 
-    Integer listingLQS;
+    String listingLQS;
 
-    Integer sla;
+    String sla;
 
-    String newSellerAssigned;
 
-    String newOrderId;
+
+    @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public class ResultMeta{
+
+        Integer eligibleSellerCount;
+
+        Integer responseCount;
+
+        Boolean replacementFound;
+
+        String sellerAssigned;
+
+        String newOrderId;
+
+        Status workFlowStatus;
+
+    }
+
+    public enum Status {
+        ORDER_PLACED,
+        ZERO_SELLER,
+        SELLER_SELECTED,
+        LQS_NOT_MET
+    }
 
 }

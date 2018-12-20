@@ -9,12 +9,13 @@ import io.swagger.annotations.ApiOperation;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 import java.util.List;
 
 @Path("/admin")
 @Api(tags = "admin")
-
+@Produces("application/json")
 public class AdminResource {
 
     public AdminResource() {
@@ -25,7 +26,6 @@ public class AdminResource {
     @ApiOperation("Gets all cancelled order ")
     @Consumes("application/json")
     public Response getCancelledOrder(){
-        List<CancelledOrderInfo> list = Lists.newArrayList();
         return Response.status(Response.Status.OK).entity(CancelledOrderReader.cancelledOrderInfos).build();
     }
 }

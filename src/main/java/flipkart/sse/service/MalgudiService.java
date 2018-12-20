@@ -3,6 +3,7 @@ package flipkart.sse.service;
 import flipkart.sse.config.MalgudiConfiguration;
 import flipkart.sse.module.MalgudiModule;
 import flipkart.sse.resource.AdminResource;
+import flipkart.sse.resource.SellerResource;
 import io.dropwizard.Application;
 import io.dropwizard.Configuration;
 import io.dropwizard.assets.AssetsBundle;
@@ -73,6 +74,7 @@ public class MalgudiService extends Application<MalgudiConfiguration> {
 
 
         environment.jersey().register(AdminResource.class);
+        environment.jersey().register(SellerResource.class);
 
     }
 }

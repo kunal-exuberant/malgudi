@@ -29,15 +29,18 @@ public class CancelledOrderReader {
 
             while((cancelledOderdetail = csvReader.readNext())!=null)
             {
-                CancelledOrderInfo emp = new CancelledOrderInfo(cancelledOderdetail[0],
-                        cancelledOderdetail[1],
-                        cancelledOderdetail[2],
-                        cancelledOderdetail[3],
-                        cancelledOderdetail[4],
-                        Integer.parseInt(cancelledOderdetail[5]),
-                        Integer.parseInt(cancelledOderdetail[6]),
-                        cancelledOderdetail[8],
-                        cancelledOderdetail[3]);
+                CancelledOrderInfo emp = CancelledOrderInfo.builder()
+                    .orderId(cancelledOderdetail[0])
+                    .accId(cancelledOderdetail[1])
+                    .listingId(cancelledOderdetail[2])
+                    .productId(cancelledOderdetail[3])
+                    .imgUrl(cancelledOderdetail[4])
+                    .orderPrice(cancelledOderdetail[5])
+                    .sellerId(cancelledOderdetail[6])
+
+                    .listingLQS(cancelledOderdetail[7])
+                    .sla(cancelledOderdetail[8])
+                    .build();
                 orderInfos.add(emp);
             }
 
@@ -51,7 +54,7 @@ public class CancelledOrderReader {
     }
 
     public static void main(String[] args) {
-        System.out.println();
+        System.out.println("Seller Data boot strapped");
     }
 
 
