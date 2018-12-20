@@ -52,20 +52,20 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="672" />
+          <entry key="css" value="802" />
           <entry key="html" value="285" />
           <entry key="java" value="103" />
-          <entry key="js" value="1728" />
+          <entry key="js" value="1786" />
           <entry key="xml" value="12" />
           <entry key="yml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="672" />
+          <entry key="CSS" value="802" />
           <entry key="HTML" value="285" />
           <entry key="JAVA" value="103" />
-          <entry key="JavaScript" value="1728" />
+          <entry key="JavaScript" value="1786" />
           <entry key="XML" value="12" />
           <entry key="YAML" value="7" />
         </counts>
@@ -109,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2614">
-              <caret line="627" column="20" selection-start-line="627" selection-start-column="20" selection-end-line="627" selection-end-column="20" />
+            <state relative-caret-position="3195">
+              <caret line="213" column="48" lean-forward="true" selection-start-line="213" selection-start-column="48" selection-end-line="213" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -139,8 +139,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/assets/scripts/admin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="63" column="571" lean-forward="true" selection-start-line="63" selection-start-column="571" selection-end-line="63" selection-end-column="588" />
+            <state relative-caret-position="208">
+              <caret line="20" column="75" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -148,8 +148,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/assets/styles/admin.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="63" column="53" lean-forward="true" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+            <state relative-caret-position="197">
+              <caret line="80" column="6" lean-forward="true" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -191,6 +191,8 @@
       <find>listingLQS</find>
       <find>sla</find>
       <find>eli</find>
+      <find>img</find>
+      <find>rhs</find>
       <find>alert</find>
     </findStrings>
     <replaceStrings>
@@ -216,24 +218,22 @@
         <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/config/MalgudiConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/model/CancelledOrderInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/controller/CancelledOrderReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/resource/AdminResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/resource/SellerResource.java" />
-        <option value="$PROJECT_DIR$/order.csv" />
         <option value="$PROJECT_DIR$/seller.csv" />
         <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/controller/SellerInfoReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/resource/SellerResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/model/CancelledOrderInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/controller/CancelledOrderReader.java" />
+        <option value="$PROJECT_DIR$/order.csv" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/scripts/admin.js" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/styles/admin.css" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="43" />
-    <option name="width" value="1400" />
-    <option name="height" value="837" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -493,7 +493,7 @@
     <editor active="true" />
     <layout>
       <window_info id="DB Browser" order="0" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1037196" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.09799714" />
       <window_info id="Project Explorer" order="2" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info id="Job Explorer" order="4" />
@@ -507,12 +507,12 @@
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Console" order="3" />
       <window_info anchor="bottom" id="DB Execution Console" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.2761905" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.35238096" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3292517" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.44625852" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3292517" />
@@ -563,7 +563,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/SellerResource.java</url>
-          <line>26</line>
+          <line>28</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -670,45 +670,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/AdminResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="187" selection-start-line="12" selection-start-column="187" selection-end-line="12" selection-end-column="187" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/CancelledOrderInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/seller.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="196" selection-start-line="5" selection-start-column="196" selection-end-line="5" selection-end-column="196" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/controller/CancelledOrderReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
@@ -719,27 +684,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/SellerResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="39" lean-forward="true" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
+        <state relative-caret-position="420">
           <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/SellerResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/AdminResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/CancelledOrderInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/controller/CancelledOrderReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2614">
-          <caret line="627" column="20" selection-start-line="627" selection-start-column="20" selection-end-line="627" selection-end-column="20" />
+        <state relative-caret-position="3195">
+          <caret line="213" column="48" lean-forward="true" selection-start-line="213" selection-start-column="48" selection-end-line="213" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -779,15 +769,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/scripts/admin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="63" column="571" lean-forward="true" selection-start-line="63" selection-start-column="571" selection-end-line="63" selection-end-column="588" />
+        <state relative-caret-position="208">
+          <caret line="20" column="75" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/styles/admin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="63" column="53" lean-forward="true" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+        <state relative-caret-position="197">
+          <caret line="80" column="6" lean-forward="true" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
         </state>
       </provider>
     </entry>

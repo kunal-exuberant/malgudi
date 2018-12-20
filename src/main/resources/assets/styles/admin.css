@@ -22,6 +22,8 @@
     float:left;
     margin: 10px 20px 20px 0px;
     border-radius: 40px;
+    max-height: 200px;
+    max-width: 200px;
 }
 
 .order-text{
@@ -51,7 +53,7 @@
 
 .rhs-container{
     float:right;
-    padding: 70px 20px 20px 20px;
+    padding: 40px 20px 20px 20px
 }
 
 .optin-eligible-container,
@@ -74,4 +76,13 @@
     border-bottom: 1px solid gray;
     text-align: center;
     width: max-content;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 20px
+}
+
+.minimize{
+    color: gray;
 }

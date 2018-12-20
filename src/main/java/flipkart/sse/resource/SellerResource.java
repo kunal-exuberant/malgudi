@@ -3,9 +3,11 @@ package flipkart.sse.resource;
 import com.google.common.collect.Lists;
 import flipkart.sse.controller.SellerInfoReader;
 import flipkart.sse.model.SellerInfo;
+import flipkart.sse.model.SellerRequest;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
+import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 import java.util.List;
@@ -36,5 +38,14 @@ public class SellerResource {
     public Response getCancelledOrder(){
         List<SellerInfo> list = SellerInfoReader.sellerInfos;
         return Response.status(Response.Status.OK).entity(list).build();
+    }
+
+
+    @POST
+    @Path("/approvalInput")
+    @ApiOperation("Give seller approval input")
+    @Consumes("application/json")
+    public Response postSellerInput(@Valid SellerRequest sellerRequest){
+        return Response.status(Response.Status.OK).build();
     }
 }
