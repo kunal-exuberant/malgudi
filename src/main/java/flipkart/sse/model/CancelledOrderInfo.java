@@ -32,8 +32,6 @@ public class CancelledOrderInfo {
 
     ResultMeta resultMeta;
 
-
-
     @Data
     @AllArgsConstructor
     @NoArgsConstructor

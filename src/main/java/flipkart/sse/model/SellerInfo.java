@@ -26,6 +26,8 @@ public class SellerInfo {
 
     long validTill;
 
+    String listingLqs;
+
     SellerOrderStatus approvalState;
 
     String sellerId;
