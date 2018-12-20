@@ -1,7 +1,8 @@
 package flipkart.sse.resource;
 
-import com.google.common.collect.Lists;
+import flipkart.sse.controller.CancelledOrderReader;
 import flipkart.sse.controller.SellerInfoReader;
+import flipkart.sse.model.CancelledOrderInfo;
 import flipkart.sse.model.SellerInfo;
 import flipkart.sse.model.SellerRequest;
 import io.swagger.annotations.Api;
@@ -11,6 +12,7 @@ import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
 @Path("/seller")
@@ -46,6 +48,37 @@ public class SellerResource {
     @ApiOperation("Give seller approval input")
     @Consumes("application/json")
     public Response postSellerInput(@Valid SellerRequest sellerRequest){
+        AtomicReference<Boolean> matchfound = new AtomicReference<>(false);
+
+        CancelledOrderReader.cancelledOrderInfos.forEach( cancelledOrderInfo -> {
+            if(cancelledOrderInfo.getSellerId().equals(sellerRequest.getSellerId()) &&
+                    cancelledOrderInfo.getListingId().equals(sellerRequest.getListingId()) &&
+                    cancelledOrderInfo.getOrderId().equals(sellerRequest.getOrderId())){
+                cancelledOrderInfo.getResultMeta().setResponseCount(cancelledOrderInfo.getResultMeta().getResponseCount() + 1);
+
+                if(Integer.valueOf(cancelledOrderInfo.getListingLQS()) <= Integer.valueOf(sellerRequest.getListingLqs())){
+                    cancelledOrderInfo.getResultMeta().setReplacementFound(true);
+                    cancelledOrderInfo.getResultMeta().setSellerAssigned(sellerRequest.getSellerId());
+                    cancelledOrderInfo.getResultMeta().setWorkFlowStatus(CancelledOrderInfo.Status.ORDER_PLACED);
+                    matchfound.set(true);
+                }
+            }
+        });
+
+        SellerInfoReader.sellerInfos.forEach( sellerInfo -> {
+            if(sellerInfo.getSellerId().equals(sellerRequest.getSellerId()) &&
+                    sellerInfo.getListingId().equals(sellerRequest.getListingId()) &&
+                    sellerInfo.getOrderId().equals(sellerRequest.getOrderId())){
+
+                if (matchfound.get())
+                    sellerInfo.setApprovalState(SellerInfo.SellerOrderStatus.ORDER_PLACED);
+                else
+                    sellerInfo.setApprovalState(SellerInfo.SellerOrderStatus.OPTED_IN);
+            }
+        });
+
+
+
         return Response.status(Response.Status.OK).build();
     }
 }

@@ -10,8 +10,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class SellerRequest {
 
+    String sellerId;
+
     String orderId;
 
     String listingId;
+
+    String listingLqs;
 
 }

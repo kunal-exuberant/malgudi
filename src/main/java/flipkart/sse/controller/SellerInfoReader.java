@@ -11,6 +11,8 @@ public class SellerInfoReader {
 
     static public List<SellerInfo> sellerInfos;
 
+    static public Long ONE_HOUR = 60 * 60 * 1000L;
+
     static {
         SellerInfoReader reader = new SellerInfoReader();
         sellerInfos = reader.read("seller.csv");
@@ -34,16 +36,15 @@ public class SellerInfoReader {
                         .price(sellerDetail[3])
                         .sla(sellerDetail[4])
                         .imgURL(sellerDetail[5])
-                        .validTill(Long.valueOf(sellerDetail[6]))
-                        .sellerId(sellerDetail[8])
+                        .listingLqs(sellerDetail[6])
+                        .validTill(System.currentTimeMillis() + (ONE_HOUR * Integer.valueOf(sellerDetail[7])))
+                        .sellerId(sellerDetail[9])
                         .build();
                 infos.add(emp);
             }
-
             infos.forEach(s -> System.out.println(s.toString()));
         }
-        catch(Exception ee)
-        {
+        catch(Exception ee) {
             ee.printStackTrace();
         }
         return infos;
