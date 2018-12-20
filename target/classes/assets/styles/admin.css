@@ -61,19 +61,17 @@
     padding: 0 20px 20px 20px;
 }
 
-.optin-span{
-    border-bottom: 1px solid gray;
+.optin-eligible, .optin-response, .optin-replacement{
+    width: 100px;
+    height: 100px;
+    font-size: 60px;
+    background-color: white;
+    color: black;
+    border: none;
 }
 
-.ffHNru {
-    font-family: "Riona Sans Light", sans-serif;
-    letter-spacing: 0.32px;
-    background-color: rgb(71, 160, 251);
-    color: rgb(255, 255, 255);
-    font-size: 14px;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    height: 44px;
-    padding: 0px 10px 0px 5px;
+.optin-span{
+    border-bottom: 1px solid gray;
+    text-align: center;
+    width: max-content;
 }

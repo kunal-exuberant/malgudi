@@ -61,6 +61,17 @@
     padding: 0 20px 20px 20px;
 }
 
+.optin-eligible, .optin-response, .optin-replacement{
+    width: 100px;
+    height: 100px;
+    font-size: 60px;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
 .optin-span{
     border-bottom: 1px solid gray;
+    text-align: center;
+    width: max-content;
 }

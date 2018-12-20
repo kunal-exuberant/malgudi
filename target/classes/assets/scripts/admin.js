@@ -49,14 +49,21 @@ var cancelledOrders =
 
 console.log(cancelledOrders);
 
+
 var orderIterator = 0
+
+$.get("/malgudi/admin/fetch", function(cancelledOrders){
+    cancelledOrders = cancelledOrders;
+
 $.each(cancelledOrders, function(){
 
-    console.log(cancelledOrders[orderIterator]);
+    console.log(cancelledOrders);
 
     $('body').append("<div class='order-item' id="+cancelledOrders[orderIterator].orderId+" ></div>");
 
     $('#'+cancelledOrders[orderIterator].orderId).append('<img src="'+cancelledOrders[orderIterator].imgUrl+'" height="200"/><div class="order-text"><div class="rhs-container"><div class="optin-eligible-container"><div class="optin-span">Eligible Sellers</div><input class="optin-eligible" type="submit" value="20"/></div></div</><div class="optin-response-container"><div class="optin-span">Responses</div><input class="optin-response" type="submit" value="20"/></div><div class="optin-replacement-container"><div class="optin-span">Replacement Found</div><input class="optin-replacement" type="submit" value="No"/></div><input class="optin-btn" type="submit" value="'+cancelledOrders[orderIterator].newOrderStatus+'"/></div>');
+
+
 
     //$('body').append(cancelledOrders[orderIterator].imgUrl);
 
@@ -101,6 +108,7 @@ $.each(cancelledOrders, function(){
 
 });
 
+});
 //alert(cancelledOrders);
 
 console.log("check point 2");
