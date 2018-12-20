@@ -6,14 +6,3 @@ server:
   adminConnectors:
   - type: http
     port: 4001
-#database:
-#  driverClass: com.mysql.jdbc.Driver
-#  url: jdbc:mysql://127.0.0.1/malgudi
-#  user: "root"
-#  password: ""
-#  maxSize: 100
-#  properties:
-#    hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
-#    hibernate.hbm2ddl.auto: update
-#    hibernate.generate_statistics: enabled
-#    hibernate.show_sql: true
