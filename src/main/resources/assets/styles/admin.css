@@ -1,0 +1,53 @@
+
+.order-item{
+        background-color: #f7f7f7;
+        padding: 20 20 20 20;
+        height: 220px;
+        clear: both;
+        border-bottom: 1px solid #cccccc;
+}
+
+.order-item img{
+    float:left;
+    margin: 10px 20px 20px 0px;
+    border-radius: 40px;
+}
+
+.order-text{
+    padding: 20px;
+}
+
+.text-label{
+    color: #555555;
+
+}
+
+.optin-btn{
+
+    height: 34px;
+    width: 100px;
+    background-color:#deab39;
+    font-weight:bold;
+    color:white;
+    font-size: 14px;
+
+}
+
+.optin-btn-container{
+
+    float:right;
+    padding: 80px 50px 0px 0px;
+
+}
+
+
+.optin-eligible-container,
+.optin-response-container,
+.optin-replacement-container{
+    float:right;
+}
+
+.optin-span{
+
+    border-bottom: 1px solid gray;
+}
