@@ -10,6 +10,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class CancelledOrderInfo {
+    String productName;
+
     String orderId;
 
     String accId;
@@ -28,16 +30,18 @@ public class CancelledOrderInfo {
 
     String sla;
 
+    ResultMeta resultMeta;
+
 
 
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
-    public class ResultMeta{
+    public static class ResultMeta{
 
-        Integer eligibleSellerCount;
+        String eligibleSellerCount;
 
-        Integer responseCount;
+        String responseCount;
 
         Boolean replacementFound;
 

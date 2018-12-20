@@ -30,16 +30,19 @@ public class CancelledOrderReader {
             while((cancelledOderdetail = csvReader.readNext())!=null)
             {
                 CancelledOrderInfo emp = CancelledOrderInfo.builder()
-                    .orderId(cancelledOderdetail[0])
-                    .accId(cancelledOderdetail[1])
-                    .listingId(cancelledOderdetail[2])
-                    .productId(cancelledOderdetail[3])
-                    .imgUrl(cancelledOderdetail[4])
-                    .orderPrice(cancelledOderdetail[5])
-                    .sellerId(cancelledOderdetail[6])
+                        .productName(cancelledOderdetail[0])
+                    .orderId(cancelledOderdetail[1])
+                    .accId(cancelledOderdetail[2])
+                    .listingId(cancelledOderdetail[3])
+                    .productId(cancelledOderdetail[4])
+                    .imgUrl(cancelledOderdetail[5])
+                    .orderPrice(cancelledOderdetail[6])
+                    .sellerId(cancelledOderdetail[7])
 
-                    .listingLQS(cancelledOderdetail[7])
-                    .sla(cancelledOderdetail[8])
+                    .listingLQS(cancelledOderdetail[8])
+                    .sla(cancelledOderdetail[9])
+                        .resultMeta(new CancelledOrderInfo.ResultMeta(cancelledOderdetail[10], cancelledOderdetail[11], Boolean.valueOf(cancelledOderdetail[12]),
+                                cancelledOderdetail[13], cancelledOderdetail[14], CancelledOrderInfo.Status.valueOf(cancelledOderdetail[15])))
                     .build();
                 orderInfos.add(emp);
             }
