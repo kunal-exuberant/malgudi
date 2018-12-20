@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class CancelledOderInfo {
+public class CancelledOrderInfo {
     String orderId;
 
     String accId;
@@ -23,8 +23,6 @@ public class CancelledOderInfo {
     Integer listingLQS;
 
     Integer sla;
-
-    Integer quantity;
 
     String newSellerAssigned;
 
