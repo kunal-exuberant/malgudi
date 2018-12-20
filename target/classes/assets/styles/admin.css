@@ -1,4 +1,15 @@
 
+.header{
+    background-color: #5394e6;
+    color: #ffffff;
+    width: 100%;
+    padding: 8px;
+    height: 62px;
+}
+
+.header > img{width: 180px;float: left;}
+
+.header > h2 {text-align: center;}
 .order-item{
         background-color: #f7f7f7;
         padding: 20 20 20 20;
@@ -25,7 +36,7 @@
 .optin-btn{
 
     height: 34px;
-    width: 100px;
+    width: 171px;
     background-color:#deab39;
     font-weight:bold;
     color:white;
@@ -34,20 +45,35 @@
 }
 
 .optin-btn-container{
-
-    float:right;
     padding: 80px 50px 0px 0px;
 
 }
 
+.rhs-container{
+    float:right;
+    padding: 70px 20px 20px 20px;
+}
 
 .optin-eligible-container,
 .optin-response-container,
 .optin-replacement-container{
-    float:right;
+    float:left;
+    padding: 0 20px 20px 20px;
 }
 
 .optin-span{
-
     border-bottom: 1px solid gray;
+}
+
+.ffHNru {
+    font-family: "Riona Sans Light", sans-serif;
+    letter-spacing: 0.32px;
+    background-color: rgb(71, 160, 251);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 44px;
+    padding: 0px 10px 0px 5px;
 }
