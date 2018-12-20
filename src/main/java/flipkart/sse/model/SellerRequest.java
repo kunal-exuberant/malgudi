@@ -16,6 +16,6 @@ public class SellerRequest {
 
     String productId;
 
-    String listingLqs;
+    String listingLQS;
 
 }

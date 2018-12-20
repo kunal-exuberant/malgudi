@@ -43,7 +43,8 @@ public class CancelledOrderReader {
                     .sla(cancelledOderdetail[9])
                         .resultMeta(new CancelledOrderInfo.ResultMeta(cancelledOderdetail[10], cancelledOderdetail[11], Boolean.valueOf(cancelledOderdetail[12]),
                                 cancelledOderdetail[13], cancelledOderdetail[14], CancelledOrderInfo.Status.valueOf(cancelledOderdetail[15])))
-                    .build();
+                    .validTill(System.currentTimeMillis() + (SellerInfoReader.ONE_HOUR * Integer.valueOf(cancelledOderdetail[16])))
+                        .build();
                 orderInfos.add(emp);
             }
 

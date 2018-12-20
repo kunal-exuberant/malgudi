@@ -56,7 +56,7 @@ public class SellerResource {
                     cancelledOrderInfo.getOrderId().equals(sellerRequest.getOrderId())){
                 cancelledOrderInfo.getResultMeta().setResponseCount(cancelledOrderInfo.getResultMeta().getResponseCount() + 1);
 
-                if(Integer.valueOf(cancelledOrderInfo.getListingLQS()) <= Integer.valueOf(sellerRequest.getListingLqs())){
+                if(Integer.valueOf(cancelledOrderInfo.getListingLQS()) <= Integer.valueOf(sellerRequest.getListingLQS())){
                     cancelledOrderInfo.getResultMeta().setReplacementFound(true);
                     cancelledOrderInfo.getResultMeta().setSellerAssigned(sellerRequest.getSellerId());
                     cancelledOrderInfo.getResultMeta().setWorkFlowStatus(CancelledOrderInfo.Status.ORDER_PLACED);

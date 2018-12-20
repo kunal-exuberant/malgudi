@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class SellerInfo {
 
+    String productName;
 
     String productId;
 
@@ -18,7 +19,7 @@ public class SellerInfo {
 
     String orderId;
 
-    String price;
+    String orderPrice;
 
     String sla;
 
@@ -26,7 +27,7 @@ public class SellerInfo {
 
     long validTill;
 
-    String listingLqs;
+    String listingLQS;
 
     SellerOrderStatus approvalState;
 
