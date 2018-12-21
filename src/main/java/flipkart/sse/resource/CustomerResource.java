@@ -14,6 +14,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 import java.util.List;
 import java.util.Optional;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
 
@@ -70,12 +71,29 @@ public class CustomerResource {
     @Consumes("application/json")
     public Response postOrder(@Valid CustomerRequest customerRequest){
 
-        Optional<SellerInfo> first = SellerInfoReader.sellerInfos.stream()
+        AtomicReference<String> sellerId = null;
+        SellerInfoReader.sellerInfos.stream()
                 .filter(s -> s.getApprovalState().equals(SellerInfo.SellerOrderStatus.OPTED_IN))
                 .filter(si -> si.getOrderId().equals(customerRequest.getOrderId()))
                 .filter(sio -> sio.getProductId().equals(customerRequest.getProductId()))
-                .findFirst();
+                .findFirst().ifPresent( so -> {
+                    sellerId.set(so.getSellerId());
+                    so.setApprovalState(SellerInfo.SellerOrderStatus.ORDER_PLACED);
+                });
 
-        return Response.status(Response.Status.OK).entity(first).build();
+
+        CancelledOrderReader.cancelledOrderInfos.forEach( cancelledOrderInfo -> {
+            if(cancelledOrderInfo.getAccId().equals(customerRequest.getAccId()) &&
+                    cancelledOrderInfo.getProductId().equals(customerRequest.getProductId()) &&
+                    cancelledOrderInfo.getOrderId().equals(customerRequest.getOrderId())){
+                cancelledOrderInfo.getResultMeta().setResponseCount(cancelledOrderInfo.getResultMeta().getResponseCount() + 1);
+
+                    cancelledOrderInfo.getResultMeta().setReplacementFound(true);
+                    cancelledOrderInfo.getResultMeta().setSellerAssigned(sellerId.get());
+                    cancelledOrderInfo.getResultMeta().setWorkFlowStatus(CancelledOrderInfo.Status.ORDER_PLACED);
+                }
+            });
+
+        return Response.status(Response.Status.OK).build();
     }
 }
