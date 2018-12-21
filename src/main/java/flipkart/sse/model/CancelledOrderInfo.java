@@ -57,7 +57,8 @@ public class CancelledOrderInfo {
         ORDER_PLACED,
         ZERO_SELLER,
         SELLER_SELECTED,
-        LQS_NOT_MET
+        LQS_NOT_MET,
+        NO_SELLER_PARTICIPATED
     }
 
 }

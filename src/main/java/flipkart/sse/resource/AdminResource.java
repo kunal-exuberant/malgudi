@@ -12,8 +12,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
-import java.util.Optional;
-import java.util.stream.Collectors;
+import java.util.concurrent.atomic.AtomicReference;
 
 @Path("/admin")
 @Api(tags = "admin")
@@ -29,19 +28,24 @@ public class AdminResource {
     @Consumes("application/json")
     public Response getCancelledOrder(){
         CancelledOrderReader.cancelledOrderInfos.forEach(cancelledOrderInfo -> {
-            if(cancelledOrderInfo.getValidTill() > System.currentTimeMillis() &&
-                ! cancelledOrderInfo.getResultMeta().getReplacementFound()){
-                Optional<SellerInfo> optionalSellerInfo = SellerInfoReader.sellerInfos.stream()
-                        .filter(sellerInfo -> SellerInfo.SellerOrderStatus.OPTED_IN == sellerInfo.getApprovalState()
-                        && sellerInfo.getProductId().equals(cancelledOrderInfo.getProductId())
-                        && sellerInfo.getOrderId().equals(cancelledOrderInfo.getOrderId())).sorted((s1, s2) ->
-                        (Integer.valueOf(s2.getListingLQS()).compareTo(Integer.valueOf(s1.getListingLQS())))).findFirst();
+            if (cancelledOrderInfo.getValidTill() < System.currentTimeMillis()){
+                cancelledOrderInfo.getResultMeta().setWorkFlowStatus(CancelledOrderInfo.Status.NO_SELLER_PARTICIPATED);
+            }
 
-                optionalSellerInfo.ifPresent( i -> {
-                    cancelledOrderInfo.getResultMeta().setReplacementFound(true);
-                    cancelledOrderInfo.getResultMeta().setSellerAssigned(i.getSellerId());
-                    cancelledOrderInfo.getResultMeta().setWorkFlowStatus(CancelledOrderInfo.Status.ORDER_PLACED);
-                });
+            if(cancelledOrderInfo.getValidTill() < System.currentTimeMillis() &&
+                ! cancelledOrderInfo.getResultMeta().getReplacementFound()){
+
+                SellerInfoReader.sellerInfos.stream()
+                    .filter(sellerInfo -> SellerInfo.SellerOrderStatus.OPTED_IN == sellerInfo.getApprovalState()
+                    && sellerInfo.getProductId().equals(cancelledOrderInfo.getProductId())
+                    && sellerInfo.getOrderId().equals(cancelledOrderInfo.getOrderId())).sorted((s1, s2) ->
+                    (Integer.valueOf(s2.getListingLQS()).compareTo(Integer.valueOf(s1.getListingLQS())))).
+                    findFirst().ifPresent( in -> {
+                        in.setApprovalState(SellerInfo.SellerOrderStatus.ORDER_PLACED);
+                        cancelledOrderInfo.getResultMeta().setReplacementFound(true);
+                        cancelledOrderInfo.getResultMeta().setSellerAssigned(in.getSellerId());
+                        cancelledOrderInfo.getResultMeta().setWorkFlowStatus(CancelledOrderInfo.Status.ORDER_PLACED);
+                    });
             }
         });
 

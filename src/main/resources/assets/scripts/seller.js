@@ -4,7 +4,7 @@
 var orderIterator = 0
 var sellerId = "S1";
 
-$.get("/malgudi/seller/fetchAll",{sellerId:sellerId}, function(cancelledOrders){
+$.get("/malgudi/seller/fetch?sellerId=S1",{sellerId:sellerId}, function(cancelledOrders){
 
 console.log(cancelledOrders);
 $.each(cancelledOrders, function(){
