@@ -2,7 +2,7 @@
 
 
 var orderIterator = 0
-var sellerId = "s1";
+var sellerId = "S1";
 
 $.get("/malgudi/seller/fetchAll",{sellerId:sellerId}, function(cancelledOrders){
 
@@ -18,11 +18,11 @@ $.each(cancelledOrders, function(){
     }
 
      if(cancelledOrders[orderIterator].approvalState == "OPTED_IN"){
-            $('#'+cancelledOrders[orderIterator].orderId).append("<div class='order-text'><div class='rhs-container'><div class='optin-btn-container'><input data='"+cancelledOrders[orderIterator].orderId+"' class='bidding-price' type='text' placeholder='Bidding Price' value=''/><input data='"+cancelledOrders[orderIterator].orderId+"' class='bidding-sla' type='text' placeholder='Bidding SLA' value=''/><input data='"+cancelledOrders[orderIterator].orderId+"' productId='"+cancelledOrders[orderIterator].productId+"' listingLQS='"+cancelledOrders[orderIterator].listingLQS+"' productId='"+cancelledOrders[orderIterator].orderId+"' class='optin-btn' type='submit' value='Opted In'/></div></div></div>");
+            $('#'+cancelledOrders[orderIterator].orderId).append("<div class='order-text'><div class='rhs-container'><div class='optin-btn-container'>Bid Price: '"+cancelledOrders[orderIterator].bidOrderPrice+"'<input data='"+cancelledOrders[orderIterator].orderId+"' productId='"+cancelledOrders[orderIterator].productId+"' listingLQS='"+cancelledOrders[orderIterator].listingLQS+"' productId='"+cancelledOrders[orderIterator].orderId+"' class='optin-btn' type='submit' value='Opted In'/></div></div></div>");
      }
 
     if(cancelledOrders[orderIterator].approvalState == "ORDER_PLACED"){
-            $('#'+cancelledOrders[orderIterator].orderId).append("<div class='order-text'><div class='rhs-container'><div class='optin-btn-container'><input data='"+cancelledOrders[orderIterator].orderId+"' class='bidding-price' type='text' placeholder='Bidding Price' value=''/><input data='"+cancelledOrders[orderIterator].orderId+"' class='bidding-sla' type='text' placeholder='Bidding SLA' value=''/><input data='"+cancelledOrders[orderIterator].orderId+"' productId='"+cancelledOrders[orderIterator].productId+"' listingLQS='"+cancelledOrders[orderIterator].listingLQS+"' productId='"+cancelledOrders[orderIterator].orderId+"' class='optin-btn' type='submit' value='Order Placed'/></div></div></div>");
+            $('#'+cancelledOrders[orderIterator].orderId).append("<div class='order-text'><div class='rhs-container'><div class='optin-btn-container'>Bid SLA: '"+cancelledOrders[orderIterator].bidSla+"'<input data='"+cancelledOrders[orderIterator].orderId+"' productId='"+cancelledOrders[orderIterator].productId+"' listingLQS='"+cancelledOrders[orderIterator].listingLQS+"' productId='"+cancelledOrders[orderIterator].orderId+"' class='optin-btn' type='submit' value='Order Placed'/></div></div></div>");
      }
 
     $('#'+cancelledOrders[orderIterator].orderId).append("<span class='bold'>"+cancelledOrders[orderIterator].productName+"</span>");
