@@ -29,7 +29,11 @@ public class AdminResource {
     @Consumes("application/json")
     public Response getCancelledOrder(){
         CancelledOrderReader.cancelledOrderInfos.forEach(cancelledOrderInfo -> {
-            if(cancelledOrderInfo.getValidTill() > System.currentTimeMillis() &&
+            if (cancelledOrderInfo.getValidTill() < System.currentTimeMillis()){
+                cancelledOrderInfo.getResultMeta().setWorkFlowStatus(CancelledOrderInfo.Status.NO_SELLER_PARTICIPATED);
+            }
+
+            if(cancelledOrderInfo.getValidTill() < System.currentTimeMillis() &&
                 ! cancelledOrderInfo.getResultMeta().getReplacementFound()){
                 Optional<SellerInfo> optionalSellerInfo = SellerInfoReader.sellerInfos.stream()
                         .filter(sellerInfo -> SellerInfo.SellerOrderStatus.OPTED_IN == sellerInfo.getApprovalState()
