@@ -33,12 +33,13 @@ public class SellerInfoReader {
                         .productId(sellerDetail[0])
                         .listingId(sellerDetail[1])
                         .orderId(sellerDetail[2])
-                        .price(sellerDetail[3])
+                        .orderPrice(sellerDetail[3])
                         .sla(sellerDetail[4])
                         .imgURL(sellerDetail[5])
-                        .listingLqs(sellerDetail[6])
+                        .listingLQS(sellerDetail[6])
                         .validTill(System.currentTimeMillis() + (ONE_HOUR * Integer.valueOf(sellerDetail[7])))
                         .sellerId(sellerDetail[9])
+                        .productName(sellerDetail[10])
                         .build();
                 infos.add(emp);
             }

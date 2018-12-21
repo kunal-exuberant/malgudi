@@ -14,8 +14,8 @@ public class SellerRequest {
 
     String orderId;
 
-    String listingId;
+    String productId;
 
-    String listingLqs;
+    String listingLQS;
 
 }

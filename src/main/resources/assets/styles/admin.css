@@ -66,7 +66,7 @@
 .optin-eligible, .optin-response, .optin-replacement{
     width: 100px;
     height: 100px;
-    font-size: 60px;
+    font-size: 40px;
     background-color: white;
     color: black;
     border: none;
@@ -85,4 +85,11 @@
 
 .minimize{
     color: gray;
+}
+
+.bidding-price, .bidding-sla{
+    height: 20px;
+    width: 80px;
+    padding: 4px;
+    margin: 10px;
 }

@@ -52,11 +52,11 @@ public class SellerResource {
 
         CancelledOrderReader.cancelledOrderInfos.forEach( cancelledOrderInfo -> {
             if(cancelledOrderInfo.getSellerId().equals(sellerRequest.getSellerId()) &&
-                    cancelledOrderInfo.getListingId().equals(sellerRequest.getListingId()) &&
+                    cancelledOrderInfo.getProductId().equals(sellerRequest.getProductId()) &&
                     cancelledOrderInfo.getOrderId().equals(sellerRequest.getOrderId())){
                 cancelledOrderInfo.getResultMeta().setResponseCount(cancelledOrderInfo.getResultMeta().getResponseCount() + 1);
 
-                if(Integer.valueOf(cancelledOrderInfo.getListingLQS()) <= Integer.valueOf(sellerRequest.getListingLqs())){
+                if(Integer.valueOf(cancelledOrderInfo.getListingLQS()) <= Integer.valueOf(sellerRequest.getListingLQS())){
                     cancelledOrderInfo.getResultMeta().setReplacementFound(true);
                     cancelledOrderInfo.getResultMeta().setSellerAssigned(sellerRequest.getSellerId());
                     cancelledOrderInfo.getResultMeta().setWorkFlowStatus(CancelledOrderInfo.Status.ORDER_PLACED);
@@ -67,7 +67,7 @@ public class SellerResource {
 
         SellerInfoReader.sellerInfos.forEach( sellerInfo -> {
             if(sellerInfo.getSellerId().equals(sellerRequest.getSellerId()) &&
-                    sellerInfo.getListingId().equals(sellerRequest.getListingId()) &&
+                    sellerInfo.getProductId().equals(sellerRequest.getProductId()) &&
                     sellerInfo.getOrderId().equals(sellerRequest.getOrderId())){
 
                 if (matchfound.get())

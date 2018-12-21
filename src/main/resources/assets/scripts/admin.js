@@ -1,8 +1,5 @@
 
 
-//alert("whatsup");
-
-console.log("check point 1");
 
 var orderIterator = 0
 
@@ -10,8 +7,6 @@ $.get("/malgudi/admin/fetch", function(cancelledOrders){
     cancelledOrders = cancelledOrders;
 
 $.each(cancelledOrders, function(){
-
-    console.log(cancelledOrders);
 
     $('body').append("<div class='order-item' id="+cancelledOrders[orderIterator].orderId+" ></div>");
 
@@ -54,8 +49,8 @@ $.each(cancelledOrders, function(){
     orderIterator++;
 
 });
-
 });
-//alert(cancelledOrders);
 
-console.log("check point 2");
+
+
+    //$('#'+cancelledOrders[orderIterator].orderId).append('<img src="'+cancelledOrders[orderIterator].imgUrl+'" height="200"/><div class="order-text"><span>"'+cancelledOrders[orderIterator].orderPrice+'"</span><span>"'+cancelledOrders[orderIterator].sla+'"</span><span>"'+cancelledOrders[orderIterator].qty+'"</span><div class="bid-timer">  Days: <span class="days"></span><br>Hours: <span class="hours"></span><br>Minutes: <span class="minutes"></span><br> Seconds: <span class="seconds"></span> </div><div class="optin-btn-container"><input class="optin-btn" type="submit" value="Order OptIn"/></div>');

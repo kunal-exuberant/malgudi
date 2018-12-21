@@ -1,109 +1,112 @@
 
 
-//alert("whatsup");
-
-console.log("check point 1");
-
-var cancelledOrders =
-[{
-
-    orderId: "0000056234239",
-    acctId: "ACC223489237489234234",
-    listingId: "LST23984723894723894",
-    productId: "MOB29834623894789324",
-    orderPrice: 5000,
-    sla: 5,
-    sellerId: "SL234234234234234",
-    listingLQS: 1999,
-    qty: 10,
-    imgUrl : "https://rukminim1.flixcart.com/image/880/1056/jggv53k0/backpack/m/k/z/amt-fizz-sch-bag-02-black-ff9-0-09-002-backpack-american-original-imaf4ghyfkaucydj.jpeg?q=50"
-},
-{
-    orderId: "000002346234239",
-    acctId: "ACC223423432423423423",
-    listingId: "LST239847258756",
-    productId: "MOB29834625345",
-    orderPrice: 9406,
-    sla: 6,
-    sellerId: "SL234234768",
-    listingLQS: 39993,
-    qty: 12,
-    imgUrl : "https://rukminim1.flixcart.com/image/880/1056/jggv53k0/backpack/m/k/z/amt-fizz-sch-bag-02-black-ff9-0-09-002-backpack-american-original-imaf4ghyfkaucydj.jpeg?q=50"
-
-},
-{
-    orderId: "000785646234239",
-    acctId: "ACC2234567567993423",
-    listingId: "LST2358568566",
-    productId: "MOB258568568987654",
-    orderPrice: 940634,
-    sla: 9,
-    sellerId: "SL234234768",
-    listingLQS: 59992,
-    qty: 23,
-    imgUrl : "https://rukminim1.flixcart.com/image/880/1056/jggv53k0/backpack/m/k/z/amt-fizz-sch-bag-02-black-ff9-0-09-002-backpack-american-original-imaf4ghyfkaucydj.jpeg?q=50"
-}
-];
-
-console.log(cancelledOrders);
 
 var orderIterator = 0
-$.each(cancelledOrders, function(){
+var sellerId = "s1";
 
-    console.log(cancelledOrders[orderIterator]);
+$.get("/malgudi/seller/fetchAll",{sellerId:sellerId}, function(cancelledOrders){
+
+console.log(cancelledOrders);
+$.each(cancelledOrders, function(){
 
     $('body').append("<div class='order-item' id="+cancelledOrders[orderIterator].orderId+" ></div>");
 
-    $('#'+cancelledOrders[orderIterator].orderId).append('<img src="'+cancelledOrders[orderIterator].imgUrl+'" height="200"/><div class="order-text"><span>"'+cancelledOrders[orderIterator].orderPrice+'"</span><span>"'+cancelledOrders[orderIterator].sla+'"</span><span>"'+cancelledOrders[orderIterator].qty+'"</span><div class="bid-timer">  Days: <span class="days"></span><br>Hours: <span class="hours"></span><br>Minutes: <span class="minutes"></span><br> Seconds: <span class="seconds"></span> </div><div class="optin-btn-container"><input class="optin-btn" type="submit" value="Order OptIn"/></div>');
+    $('#'+cancelledOrders[orderIterator].orderId).append('<img src="'+cancelledOrders[orderIterator].imgURL+'" height="200"/>');
 
-    //$('body').append(cancelledOrders[orderIterator].imgUrl);
+    if(cancelledOrders[orderIterator].approvalState == null || cancelledOrders[orderIterator].approvalState == "NOT_OPTED_IN"){
+        $('#'+cancelledOrders[orderIterator].orderId).append("<div class='order-text'><div class='rhs-container'><div class='optin-btn-container'><input data='"+cancelledOrders[orderIterator].orderId+"' class='bidding-price' type='text' placeholder='Bidding Price' value=''/><input data='"+cancelledOrders[orderIterator].orderId+"' class='bidding-sla' type='text' placeholder='Bidding SLA' value=''/><input data='"+cancelledOrders[orderIterator].orderId+"' productId='"+cancelledOrders[orderIterator].productId+"' listingLQS='"+cancelledOrders[orderIterator].listingLQS+"'  productId='"+cancelledOrders[orderIterator].orderId+"' class='optin-btn' type='submit' value='Order OptIn'/></div></div></div>");
+    }
 
-    $('#'+cancelledOrders[orderIterator].orderId).append(cancelledOrders[orderIterator].orderId);
+     if(cancelledOrders[orderIterator].approvalState == "OPTED_IN"){
+            $('#'+cancelledOrders[orderIterator].orderId).append("<div class='order-text'><div class='rhs-container'><div class='optin-btn-container'><input data='"+cancelledOrders[orderIterator].orderId+"' class='bidding-price' type='text' placeholder='Bidding Price' value=''/><input data='"+cancelledOrders[orderIterator].orderId+"' class='bidding-sla' type='text' placeholder='Bidding SLA' value=''/><input data='"+cancelledOrders[orderIterator].orderId+"' productId='"+cancelledOrders[orderIterator].productId+"' listingLQS='"+cancelledOrders[orderIterator].listingLQS+"' productId='"+cancelledOrders[orderIterator].orderId+"' class='optin-btn' type='submit' value='Opted In'/></div></div></div>");
+     }
 
-    $('#'+cancelledOrders[orderIterator].orderId).append("<br />");
+    if(cancelledOrders[orderIterator].approvalState == "ORDER_PLACED"){
+            $('#'+cancelledOrders[orderIterator].orderId).append("<div class='order-text'><div class='rhs-container'><div class='optin-btn-container'><input data='"+cancelledOrders[orderIterator].orderId+"' class='bidding-price' type='text' placeholder='Bidding Price' value=''/><input data='"+cancelledOrders[orderIterator].orderId+"' class='bidding-sla' type='text' placeholder='Bidding SLA' value=''/><input data='"+cancelledOrders[orderIterator].orderId+"' productId='"+cancelledOrders[orderIterator].productId+"' listingLQS='"+cancelledOrders[orderIterator].listingLQS+"' productId='"+cancelledOrders[orderIterator].orderId+"' class='optin-btn' type='submit' value='Order Placed'/></div></div></div>");
+     }
 
-    $('#'+cancelledOrders[orderIterator].orderId).append(cancelledOrders[orderIterator].listingId);
+    $('#'+cancelledOrders[orderIterator].orderId).append("<span class='bold'>productName: "+cancelledOrders[orderIterator].productName+"</span>");
+        $('#'+cancelledOrders[orderIterator].orderId).append("<br />");
 
-    $('#'+cancelledOrders[orderIterator].orderId).append("<br />");
-
-    $('#'+cancelledOrders[orderIterator].orderId).append(cancelledOrders[orderIterator].productId);
-
-    $('#'+cancelledOrders[orderIterator].orderId).append("<br />");
-
-    $('#'+cancelledOrders[orderIterator].orderId).append("Promised Price: "+cancelledOrders[orderIterator].orderPrice);
-
-    $('#'+cancelledOrders[orderIterator].orderId).append("<br />");
-
-    $('#'+cancelledOrders[orderIterator].orderId).append("Promised SLA: "+cancelledOrders[orderIterator].sla);
+    $('#'+cancelledOrders[orderIterator].orderId).append("<span class='minimize'>orderId: "+cancelledOrders[orderIterator].orderId+"</span>");
 
     $('#'+cancelledOrders[orderIterator].orderId).append("<br />");
 
+    $('#'+cancelledOrders[orderIterator].orderId).append("<span class='minimize'>listingId: "+cancelledOrders[orderIterator].listingId+"</span>");
 
-    $('#'+cancelledOrders[orderIterator].orderId).append(cancelledOrders[orderIterator].sellerId);
+    $('#'+cancelledOrders[orderIterator].orderId).append("<br />");
+
+    $('#'+cancelledOrders[orderIterator].orderId).append("<span class='minimize'>productId: "+cancelledOrders[orderIterator].productId+"</span>");
+
+    $('#'+cancelledOrders[orderIterator].orderId).append("<br />");
+
+    $('#'+cancelledOrders[orderIterator].orderId).append("<span class='minimize'>Promised Price: "+cancelledOrders[orderIterator].orderPrice+"</span>");
+
+    $('#'+cancelledOrders[orderIterator].orderId).append("<br />");
+
+    $('#'+cancelledOrders[orderIterator].orderId).append("<span class='minimize'>Promised SLA: "+cancelledOrders[orderIterator].sla+"</span>");
 
     $('#'+cancelledOrders[orderIterator].orderId).append("<br />");
 
 
-    $('#'+cancelledOrders[orderIterator].orderId).append(cancelledOrders[orderIterator].listingLQS);
+    $('#'+cancelledOrders[orderIterator].orderId).append("<span class='minimize'>SellerId: "+cancelledOrders[orderIterator].sellerId+"</span>");
 
     $('#'+cancelledOrders[orderIterator].orderId).append("<br />");
 
 
-    $('#'+cancelledOrders[orderIterator].orderId).append(cancelledOrders[orderIterator].qty);
+    $('#'+cancelledOrders[orderIterator].orderId).append("<span class='minimize'>LQS: "+cancelledOrders[orderIterator].listingLQS+"</span>");
 
     $('#'+cancelledOrders[orderIterator].orderId).append("<br />");
-
-            //$('#'+cancelledOrders[orderIterator].orderId).append("<hr />");
 
     orderIterator++;
 
 });
 
-//alert(cancelledOrders);
+$(".optin-btn").on("click",function(){
+console.log("clicking optin btn");
+    var orderId = $(this).attr("data");
+    var productId = $(this).attr("productId");
+    var listingLQS = $(this).attr("listingLQS");
+    var me = $(this);
+    var biddingPrice = me.parent().children().eq(0).val();
+    var biddingSLA = me.parent().children().eq(1).val();
 
-console.log("check point 2");
+    if(biddingPrice > 0 && biddingSLA > 0 ){
+
+        me.attr("value","OPTED_IN");
 
 
+       var sellerRequest = {
+
+            "orderId": orderId,
+            "sellerId": sellerId,
+            "productId": productId,
+            "listingLQS": listingLQS,
+            "biddingPrice" : biddingPrice,
+            "biddingSLA": biddingSLA
+       };
+
+
+       var sellerRequest = JSON.stringify(sellerRequest);
+
+        $.ajax({
+            type: "POST",
+            url: "/malgudi/seller/approvalInput",
+            dataType: 'json',
+            contentType:"application/json",
+            data: sellerRequest,
+            cache: false,
+            success: function(data){
+                me.attr("value","OPTED_IN");
+            }
+        });
+    }
+    else{
+        alert("Please enter a value for bidding price and bidding SLA");
+    }
+});
+
+});
 
 
 function getTimeRemaining(endtime){
