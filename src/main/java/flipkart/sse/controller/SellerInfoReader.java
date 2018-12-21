@@ -12,7 +12,7 @@ public class SellerInfoReader {
     static public List<SellerInfo> sellerInfos;
 
 //    static public Long ONE_HOUR = 60 * 60 * 1000L;
-    static public Long ONE_HOUR = 15 * 1000L;
+    static public Long ONE_HOUR = 60 * 1000L;
 
     static {
         SellerInfoReader reader = new SellerInfoReader();

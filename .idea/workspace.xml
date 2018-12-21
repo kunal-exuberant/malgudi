@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb185deb-0fd2-4e7d-b37f-f756d6373b68" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/order.csv" beforeDir="false" afterPath="$PROJECT_DIR$/order.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/flipkart/sse/controller/SellerInfoReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flipkart/sse/controller/SellerInfoReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flipkart/sse/model/CancelledOrderInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flipkart/sse/model/CancelledOrderInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flipkart/sse/resource/AdminResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flipkart/sse/resource/AdminResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/scripts/seller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/scripts/seller.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -70,24 +68,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="seller.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/seller.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="seller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/scripts/seller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SellerResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/SellerResource.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -100,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerResource.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CustomerResource.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/CustomerResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="32" column="52" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="52" />
+            <state relative-caret-position="400">
+              <caret line="80" column="69" selection-start-line="80" selection-start-column="69" selection-end-line="80" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,7 +92,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminResource.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SellerInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="625">
+              <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/order.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="247" selection-start-line="2" selection-start-column="247" selection-end-line="2" selection-end-column="247" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seller.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/seller.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/AdminResource.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -148,20 +158,11 @@
       <file leaf-file-name="SellerInfoReader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/controller/SellerInfoReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="55">
               <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResourceMethodInvocationHandlerFactory.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.25.1/jersey-server-2.25.1.jar!/org/glassfish/jersey/server/model/internal/ResourceMethodInvocationHandlerFactory.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
             </state>
           </provider>
         </entry>
@@ -244,14 +245,14 @@
         <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/resource/SellerResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/controller/CancelledOrderReader.java" />
-        <option value="$PROJECT_DIR$/order.csv" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/styles/admin.css" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/scripts/admin.js" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/seller.html" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/scripts/seller.js" />
-        <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/controller/SellerInfoReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/model/CancelledOrderInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/resource/AdminResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/controller/SellerInfoReader.java" />
+        <option value="$PROJECT_DIR$/order.csv" />
       </list>
     </option>
   </component>
@@ -551,7 +552,7 @@
       <window_info id="Structure" order="4" sideWeight="0.50060606" side_tool="true" weight="0.1795422" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info id="UI Designer" order="9" />
-      <window_info active="true" anchor="bottom" id="Debug" order="8" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.32969698" />
       <window_info id="DB Browser" order="0" weight="0.3297568" />
       <window_info anchor="bottom" id="Messages" order="15" weight="0.32837838" />
@@ -561,7 +562,7 @@
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32969698" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49928468" weight="0.43878788" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.53212124" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49939394" visible="true" weight="0.1795422" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49939394" visible="true" weight="0.1795422" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32969698" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="8" side_tool="true" />
@@ -757,13 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/order.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="176" selection-start-line="2" selection-start-column="176" selection-end-line="2" selection-end-column="176" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/dropwizard/dropwizard-core/0.7.1/dropwizard-core-0.7.1.jar!/io/dropwizard/Application.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -883,16 +877,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/scripts/admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -931,13 +915,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seller.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/scripts/seller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -959,36 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/SellerResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/controller/SellerInfoReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/CustomerResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="32" column="52" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/CancelledOrderInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-110">
@@ -996,6 +943,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/AdminResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
@@ -1009,10 +963,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/AdminResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/SellerResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="476">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/controller/SellerInfoReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seller.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="247" selection-start-line="2" selection-start-column="247" selection-end-line="2" selection-end-column="247" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/CustomerResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="80" column="69" selection-start-line="80" selection-start-column="69" selection-end-line="80" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
