@@ -2,34 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb185deb-0fd2-4e7d-b37f-f756d6373b68" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/flipkart/sse/model/CustomerInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/flipkart/sse/model/CustomerRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/flipkart/sse/resource/CustomerResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order.csv" beforeDir="false" afterPath="$PROJECT_DIR$/order.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/seller.csv" beforeDir="false" afterPath="$PROJECT_DIR$/seller.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flipkart/sse/controller/CancelledOrderReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flipkart/sse/controller/CancelledOrderReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flipkart/sse/controller/SellerInfoReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flipkart/sse/controller/SellerInfoReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flipkart/sse/model/CancelledOrderInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flipkart/sse/model/CancelledOrderInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flipkart/sse/resource/AdminResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flipkart/sse/resource/AdminResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/flipkart/sse/resource/SellerResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flipkart/sse/resource/SellerResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/scripts/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/scripts/admin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/scripts/seller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/scripts/seller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/styles/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/styles/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/scripts/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assets/scripts/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/scripts/seller.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assets/scripts/seller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/styles/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assets/styles/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flipkart/sse/controller/CancelledOrderReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flipkart/sse/controller/CancelledOrderReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flipkart/sse/controller/SellerInfoReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flipkart/sse/controller/SellerInfoReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flipkart/sse/model/CancelledOrderInfo$CancelledOrderInfoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flipkart/sse/model/CancelledOrderInfo$CancelledOrderInfoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flipkart/sse/model/CancelledOrderInfo$ResultMeta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flipkart/sse/model/CancelledOrderInfo$ResultMeta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flipkart/sse/model/CancelledOrderInfo$Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flipkart/sse/model/CancelledOrderInfo$Status.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flipkart/sse/model/CancelledOrderInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flipkart/sse/model/CancelledOrderInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flipkart/sse/model/SellerInfo$SellerInfoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flipkart/sse/model/SellerInfo$SellerInfoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flipkart/sse/model/SellerInfo$SellerOrderStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flipkart/sse/model/SellerInfo$SellerOrderStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flipkart/sse/model/SellerInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flipkart/sse/model/SellerInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flipkart/sse/model/SellerRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flipkart/sse/model/SellerRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flipkart/sse/resource/AdminResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flipkart/sse/resource/AdminResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flipkart/sse/resource/SellerResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flipkart/sse/resource/SellerResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/seller.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/seller.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,7 +37,7 @@
           <entry key="csv" value="1" />
           <entry key="html" value="2" />
           <entry key="java" value="8" />
-          <entry key="js" value="2" />
+          <entry key="js" value="3" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
@@ -64,7 +47,7 @@
           <entry key="CSS" value="2" />
           <entry key="HTML" value="2" />
           <entry key="JAVA" value="8" />
-          <entry key="JavaScript" value="2" />
+          <entry key="JavaScript" value="3" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="YAML" value="1" />
         </counts>
@@ -72,7 +55,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="835" />
-          <entry key="html" value="285" />
+          <entry key="html" value="286" />
           <entry key="java" value="103" />
           <entry key="js" value="2697" />
           <entry key="xml" value="12" />
@@ -82,7 +65,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="835" />
-          <entry key="HTML" value="285" />
+          <entry key="HTML" value="286" />
           <entry key="JAVA" value="103" />
           <entry key="JavaScript" value="2697" />
           <entry key="XML" value="12" />
@@ -108,8 +91,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/assets/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="71" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="13" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/scripts/admin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="77" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -117,29 +109,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/assets/seller.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+            <state relative-caret-position="180">
+              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/assets/scripts/seller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="892">
-              <caret line="73" column="44" lean-forward="true" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/SellerResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="349">
+              <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -153,10 +133,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/assets/styles/admin.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="1335">
               <caret line="89" column="29" lean-forward="true" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
             </state>
           </provider>
@@ -165,8 +145,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="332">
+              <caret line="24" column="17" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,19 +155,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar!/javax/ws/rs/core/Response.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerInfo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="334">
-              <caret line="39" column="20" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="20" />
+              <caret line="44" column="16" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -230,8 +201,9 @@
       <find>sellerId</find>
       <find>approvalInput</find>
       <find>orderId</find>
-      <find>SellerRequest</find>
       <find>order Optin</find>
+      <find>SellerRequest</find>
+      <find>productName</find>
     </findStrings>
     <replaceStrings>
       <replace>https://rukminim1.flixcart.com/image/880/1056/jggv53k0/backpack/m/k/z/amt-fizz-sch-bag-02-black-ff9-0-09-002-backpack-american-original-imaf4ghyfkaucydj.jpeg?q=50</replace>
@@ -247,7 +219,6 @@
         <option value="$PROJECT_DIR$/src/main/java/MalgudiConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/MalgudiService.java" />
         <option value="$PROJECT_DIR$/src/main/java/IssueUnderstandingAndClassification.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/seller.html" />
         <option value="$PROJECT_DIR$/service.yml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/model/CancelledOderInfo.java" />
@@ -264,9 +235,10 @@
         <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/model/CancelledOrderInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/flipkart/sse/controller/CancelledOrderReader.java" />
         <option value="$PROJECT_DIR$/order.csv" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/scripts/admin.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/scripts/seller.js" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/styles/admin.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/scripts/admin.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/seller.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/scripts/seller.js" />
       </list>
     </option>
   </component>
@@ -439,8 +411,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="css&#9;FILE&#9;file:///Users/kunalsingh.k/git-repo/malgudi/src/main/resources/assets/styles/admin.css&#10;csv&#9;FILE&#9;file:///Users/kunalsingh.k/git-repo/malgudi/seller.csv&#10;seller&#9;FILE&#9;file:///Users/kunalsingh.k/git-repo/malgudi/src/main/java/flipkart/sse/model/SellerInfo.java&#10;IssueUnderstandingAndClassification&#9;FILE&#9;file:///Users/kunalsingh.k/git-repo/malgudi/src/main/java/IssueUnderstandingAndClassification.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545376523410" />
+    <property name="SearchEverywhereHistoryKey" value="admin&#9;FILE&#9;file:///Users/kunalsingh.k/git-repo/malgudi/src/main/resources/assets/scripts/admin.js&#10;css&#9;FILE&#9;file:///Users/kunalsingh.k/git-repo/malgudi/src/main/resources/assets/styles/admin.css&#10;csv&#9;FILE&#9;file:///Users/kunalsingh.k/git-repo/malgudi/seller.csv&#10;seller&#9;FILE&#9;file:///Users/kunalsingh.k/git-repo/malgudi/src/main/java/flipkart/sse/model/SellerInfo.java&#10;IssueUnderstandingAndClassification&#9;FILE&#9;file:///Users/kunalsingh.k/git-repo/malgudi/src/main/java/IssueUnderstandingAndClassification.java" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545377177153" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
@@ -761,13 +733,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/scripts/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar!/javax/ws/rs/core/Response.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -785,51 +750,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="71" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
-          <caret line="39" column="20" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/SellerResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/seller.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/scripts/seller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="892">
-          <caret line="73" column="44" lean-forward="true" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
+          <caret line="44" column="16" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -840,10 +764,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/resource/SellerResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/scripts/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="77" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/seller.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/flipkart/sse/model/SellerRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/styles/admin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
+        <state relative-caret-position="1335">
           <caret line="89" column="29" lean-forward="true" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/scripts/seller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
         </state>
       </provider>
     </entry>

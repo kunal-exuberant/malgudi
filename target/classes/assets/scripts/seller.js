@@ -25,7 +25,7 @@ $.each(cancelledOrders, function(){
             $('#'+cancelledOrders[orderIterator].orderId).append("<div class='order-text'><div class='rhs-container'><div class='optin-btn-container'><input data='"+cancelledOrders[orderIterator].orderId+"' class='bidding-price' type='text' placeholder='Bidding Price' value=''/><input data='"+cancelledOrders[orderIterator].orderId+"' class='bidding-sla' type='text' placeholder='Bidding SLA' value=''/><input data='"+cancelledOrders[orderIterator].orderId+"' productId='"+cancelledOrders[orderIterator].productId+"' listingLQS='"+cancelledOrders[orderIterator].listingLQS+"' productId='"+cancelledOrders[orderIterator].orderId+"' class='optin-btn' type='submit' value='Order Placed'/></div></div></div>");
      }
 
-    $('#'+cancelledOrders[orderIterator].orderId).append("<span class='bold'>productName: "+cancelledOrders[orderIterator].productName+"</span>");
+    $('#'+cancelledOrders[orderIterator].orderId).append("<span class='bold'>"+cancelledOrders[orderIterator].productName+"</span>");
         $('#'+cancelledOrders[orderIterator].orderId).append("<br />");
 
     $('#'+cancelledOrders[orderIterator].orderId).append("<span class='minimize'>orderId: "+cancelledOrders[orderIterator].orderId+"</span>");
@@ -82,8 +82,8 @@ console.log("clicking optin btn");
             "sellerId": sellerId,
             "productId": productId,
             "listingLQS": listingLQS,
-            "biddingPrice" : biddingPrice,
-            "biddingSLA": biddingSLA
+            "bidOrderPrice" : biddingPrice,
+            "bidSla": biddingSLA
        };
 
 

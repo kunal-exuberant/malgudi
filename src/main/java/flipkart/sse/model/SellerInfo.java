@@ -33,10 +33,15 @@ public class SellerInfo {
 
     String sellerId;
 
+    String bidOrderPrice;
+
+    String bidSla;
+
 
     public enum SellerOrderStatus{
         NOT_OPTED_IN,
         OPTED_IN,
-        ORDER_PLACED
+        ORDER_PLACED,
+        REJECTED
     }
 }

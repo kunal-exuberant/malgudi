@@ -1,6 +1,5 @@
 package flipkart.sse.model;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,18 +9,19 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class SellerRequest {
-
-    String sellerId;
+public class CustomerInfo {
 
     String orderId;
 
+    String productName;
+
+    String accId;
+
     String productId;
 
-    String listingLQS;
+    String sellerId;
 
-    String bidOrderPrice;
+    String proposedSla;
 
-    String bidSla;
-
+    String proposedPrice;
 }
