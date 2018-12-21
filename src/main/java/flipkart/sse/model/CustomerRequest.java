@@ -1,6 +1,5 @@
 package flipkart.sse.model;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,18 +9,19 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class SellerRequest {
 
-    String sellerId;
+public class CustomerRequest {
+
+    String accId;
 
     String orderId;
 
     String productId;
 
-    String listingLQS;
+    String Status;
 
-    String bidOrderPrice;
-
-    String bidSla;
-
+    public static enum Status{
+        APPROVE,
+        REJECT
+    }
 }

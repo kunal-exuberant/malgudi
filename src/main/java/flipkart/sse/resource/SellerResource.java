@@ -2,7 +2,6 @@ package flipkart.sse.resource;
 
 import flipkart.sse.controller.CancelledOrderReader;
 import flipkart.sse.controller.SellerInfoReader;
-import flipkart.sse.model.CancelledOrderInfo;
 import flipkart.sse.model.SellerInfo;
 import flipkart.sse.model.SellerRequest;
 import io.swagger.annotations.Api;
@@ -56,12 +55,12 @@ public class SellerResource {
                     cancelledOrderInfo.getOrderId().equals(sellerRequest.getOrderId())){
                 cancelledOrderInfo.getResultMeta().setResponseCount(cancelledOrderInfo.getResultMeta().getResponseCount() + 1);
 
-                if(Integer.valueOf(cancelledOrderInfo.getListingLQS()) <= Integer.valueOf(sellerRequest.getListingLQS())){
-                    cancelledOrderInfo.getResultMeta().setReplacementFound(true);
-                    cancelledOrderInfo.getResultMeta().setSellerAssigned(sellerRequest.getSellerId());
-                    cancelledOrderInfo.getResultMeta().setWorkFlowStatus(CancelledOrderInfo.Status.ORDER_PLACED);
-                    matchfound.set(true);
-                }
+//                if(Integer.valueOf(cancelledOrderInfo.getListingLQS()) <= Integer.valueOf(sellerRequest.getListingLQS())){
+//                    cancelledOrderInfo.getResultMeta().setReplacementFound(true);
+//                    cancelledOrderInfo.getResultMeta().setSellerAssigned(sellerRequest.getSellerId());
+//                    cancelledOrderInfo.getResultMeta().setWorkFlowStatus(CancelledOrderInfo.Status.ORDER_PLACED);
+//                    matchfound.set(true);
+//                }
             }
         });
 
@@ -69,6 +68,8 @@ public class SellerResource {
             if(sellerInfo.getSellerId().equals(sellerRequest.getSellerId()) &&
                     sellerInfo.getProductId().equals(sellerRequest.getProductId()) &&
                     sellerInfo.getOrderId().equals(sellerRequest.getOrderId())){
+                sellerInfo.setBidOrderPrice(sellerRequest.getBidOrderPrice());
+                sellerInfo.setBidSla(sellerRequest.getBidSla());
 
                 if (matchfound.get())
                     sellerInfo.setApprovalState(SellerInfo.SellerOrderStatus.ORDER_PLACED);
